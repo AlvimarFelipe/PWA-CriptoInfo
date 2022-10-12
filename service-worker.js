@@ -1,4 +1,4 @@
-var cacheName = 'CriptoInfo+-v1.5';
+var cacheName = 'Cripto-Info';
 
 self.addEventListener('install', event => {
 
@@ -8,9 +8,35 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
 
+        './index.html',
+        './Ajuda.html',
+        './Como-Investir.html',
+        './compra.html',
         './home.html',
-        './index.html'
-  
+        './O-que-é.html',
+        './venda.html',
+
+
+        './assets/css/bloqueio.css',
+        './assets/css/fontawesome-all.min.css',
+        './assets/css/main.css',
+
+        './assets/js/bloqueio.js',
+        './assets/js/breakpoints.min.js',
+        './assets/js/browser.min.js',
+        './assets/js/compra.js',
+        './assets/js/filtro.js',
+        './assets/js/jquery.min.js',
+        './assets/js/main.js',
+        './assets/js/util.js',
+
+        './images/carteira de cripto.js',
+        './images/cripto no Brasil.js',
+        
+       
+
+
+        
       ]))
   );
 });

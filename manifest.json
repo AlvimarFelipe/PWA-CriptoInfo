@@ -48,7 +48,9 @@
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any maskable"
-    },
+    }
+  ],
+  "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -371,7 +373,8 @@
     },
     {
       "src": "android/android-launchericon-512-512.png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     },
     {
       "src": "android/android-launchericon-192-192.png",
@@ -498,7 +501,6 @@
       "sizes": "1024x1024"
     }
   ],
-  
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#4e4bd8",
@@ -516,5 +518,56 @@
       "sizes": "750x1334",
       "type": "image/png"
     }
-  ]
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://www.mercadobitcoin.com.br",
+      "id": "Meracado Biticon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/home.html",
+      "icons": [
+        {
+          "src": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/images/logo.png"
+        }
+      ],
+      "description": "Pag Notícias"
+    },
+    {
+      "name": "Compras",
+      "url": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/compra.html?moeda=none",
+      "icons": [
+        {
+          "src": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/images/logo.png"
+        }
+      ],
+      "description": "Pag Compras"
+    },
+    {
+      "name": "Vendas",
+      "url": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/venda.html",
+      "icons": [
+        {
+          "src": "https://mobile-pwa-criptoinfo.alvimarfelipe.repl.co/images/logo.png"
+        }
+      ],
+      "description": "Pag Vendas"
+    }
+  ],
+  "categories": [
+    "education",
+    "finance",
+    "lifestyle",
+    "navigation",
+    "news",
+    "shopping"
+  ],
+  "description": "Neste site é possível ver notícias sobre sua criptomoeda preferida e identificar se esta na hora de comprar ou vende-las de acordo com as notícias.",
+  "lang": "pt",
+  "dir": "auto",
+  "scope": "all"
 }
