@@ -1,0 +1,71 @@
+{
+  "name": "CriptoInfo",
+  "short_name": "CriptoInfo",
+  "icons": [
+       {
+      "src": "images/imgs/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/imgs/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/imgs/1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#4e4bd8",
+  "theme_color": "#3fccde",
+  "orientation": "portrait",
+  "language": "portuguese",
+  "screenshots": [
+    {
+      "src": "/images/imgs/telapc.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/imgs/telacell.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ]
+}

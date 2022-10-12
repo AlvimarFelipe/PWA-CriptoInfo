@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bloqeuio.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>CriptoInfo</title>
+
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileImage" content="images/imgs/144.png">
+    <meta name="msapplication-TileColor" content="#31506F">
+    <meta name="theme-color" content="#4D5360" />
+    <link rel="shortcut icon"  href="images/imgs/favicon.ico" type="image/x-icon">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CriptoInfo">
+    <link rel="apple-touch-icon" href="images/imgs/144.png">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/imgs/152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/imgs/180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="images/imgs/167.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+<body>
+
+    <header id="cabeca">
+									 	
+									
+        <div class="img-logo">
+            <img class="logo_img" src="images/logo.png">
+            <p>CriptoInfo</p>
+        </div>
+        <div class="line">
+
+    </header>
+
+    <section class="alinhamento">
+        <h1>Tire uma foto para desbloquear</h1>
+        <p class="vid"><video autoplay style="height: 380px; width: 298px;"></video></p>
+
+        <div class="c-loader d-none"></div>
+        
+        <button class="take-photo">Analisar Foto</button>
+    </section>
+    
+<!-- Scripts -->
+            
+          <script>
+            let newWorker;
+
+            if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').then(reg => {
+                reg.addEventListener('updatefound', () => {
+                // A wild service worker has appeared in reg.installing!
+                newWorker = reg.installing;
+                newWorker.addEventListener('statechange', () => {
+                    // Has network.state changed?
+
+                });
+                });
+            });
+            let refreshing;
+            navigator.serviceWorker.addEventListener('controllerchange', function () {
+                if (refreshing) return;
+                window.location.reload();
+                refreshing = true;
+            });
+            }
+        </script>
+
+   
+    <script src="/assets/js/bloqueio.js"></script>
+</body>
+</html>
